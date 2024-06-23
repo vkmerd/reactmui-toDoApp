@@ -2,7 +2,7 @@ import { useState, useCallback } from 'react';
 import { Button, Container, TextField, Box, Card, CardContent, Grid, Typography, Icon } from '@mui/material';
 import { deleteData, handleFormToDo, completedData } from './components/ToDoFunctions';
 
-export default function App() {
+function App() {
   const [todos, setToDos] = useState([]);
 
   const handleForm = useCallback((e) => {
@@ -62,3 +62,5 @@ export default function App() {
     </>
   );
 }
+
+export default App

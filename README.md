@@ -1,8 +1,31 @@
-# React + Vite
+# ToDo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, kullanıcıların görevlerini yönetmelerini sağlayan basit bir ToDo uygulamasıdır. React.js ve Material-UI kullanılarak geliştirilmiştir.
 
-Currently, two official plugins are available:
+## Proje Hakkında
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ToDo App, kullanıcıların görev eklemesine, silmesine ve tamamlamasına olanak tanır. Görevler tamamlandığında, arka plan rengi yeşile döner ve ilgili görevin üstü çizilir. Fonksiyonlar, işlevlerin ve state yönetiminin daha temiz ve modüler olması için ayrı dosyalara ayrılmıştır.
+
+## Kurulum
+
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+
+1. Bu projeyi klonlayın:
+    ```sh
+    git clone https://github.com/vkmerd/reactmui-toDoApp/
+    cd todo-app
+    ```
+
+2. Gerekli bağımlılıkları yükleyin:
+    npm install
+
+3. Uygulamayı başlatın:
+    npm start
+
+## Kullanılan Teknolojiler
+
+- React.js
+- Material-UI
+- Vite
+
+Eğer projem hakkında bir sorunuz olursa benimle "mert32139@gmail.com" adresinden iletişime geçebilirsiniz.

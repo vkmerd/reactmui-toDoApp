@@ -54,9 +54,6 @@ export default function App() {
                       {todo.completed ? 'Geri Al' : 'Tamamla'}
                     </Button>
                   </CardContent>
-                  {todo.completed && (
-                    <Icon component={CloseIcon} style={{ position: 'absolute', top: 0, right: 0, color: '#fff', fontSize: '2rem' }} />
-                  )}
                 </Card>
               </Grid>
             ))

@@ -1,6 +1,5 @@
 import { useState, useCallback } from 'react';
 import { Button, Container, TextField, Box, Card, CardContent, Grid, Typography, Icon } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
 import { deleteData, handleFormToDo, completedData } from './components/ToDoFunctions';
 
 export default function App() {

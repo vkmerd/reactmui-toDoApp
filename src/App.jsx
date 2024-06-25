@@ -4,6 +4,7 @@ import { deleteData, handleFormToDo, completedData } from './components/ToDoFunc
 
 export default function App() {
   const [todos, setToDos] = useState([]);
+  let Date = new Date();
 
   const handleForm = useCallback((e) => {
       handleFormToDo(e, setToDos);
@@ -46,6 +47,9 @@ export default function App() {
                     <CardContent>
                       <Typography variant="h6" component="div" style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}> 
                         {todo.task}
+                      </Typography>
+                      <Typography variant="h6" component="div"> 
+                       Eklenme Zamanı: {todo.dateAdded}
                       </Typography>
                       <Button variant="contained" color="secondary" onClick={() => handleDelete(index)} sx={{ mt: 1, mr: 1 }}>
                         Sil

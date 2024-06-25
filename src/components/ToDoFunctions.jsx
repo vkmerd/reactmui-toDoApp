@@ -2,7 +2,7 @@ export const handleFormToDo = (e, setToDos) => {
     e.preventDefault();
     const toDoData = Object.fromEntries(new FormData(e.target));
     const now = new Date()
-    setToDos(prevToDo => [...prevToDo, { task: toDoData.task, completed: false,dateAdded: now }]);
+    setToDos(prevToDo => [...prevToDo, { task: toDoData.task, completed: false,dateAdded: now.toLocaleDateString() }]);
     e.target.reset();
 };
 

@@ -4,7 +4,6 @@ import { deleteData, handleFormToDo, completedData } from './components/ToDoFunc
 
 export default function App() {
   const [todos, setToDos] = useState([]);
-  let Date = new Date();
 
   const handleForm = useCallback((e) => {
       handleFormToDo(e, setToDos);

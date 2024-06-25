@@ -1,8 +1,8 @@
 export const handleFormToDo = (e, setToDos) => {
     e.preventDefault();
     const toDoData = Object.fromEntries(new FormData(e.target));
-    const now = new Date();
-    setToDos(prevToDos => [...prevToDos, { task: toDoData.task, completed: false, dateAdded: now.toLocaleString() }]);
+    const now = new Date()
+    setToDos(prevToDo => [...prevToDo, { task: toDoData.task, completed: false,dateAdded: now }]);
     e.target.reset();
 };
 
